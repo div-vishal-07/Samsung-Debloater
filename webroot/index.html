@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Miui/HyperOS Debloater by Vishal v4.04</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body oncontextmenu="return false;">
+
+    <div id="pop-indicator"><span>A</span></div>
+
+    <div class="header-container">
+        <div class="main-header-left">
+            APPLICATION<br>SELECTION
+        </div>
+        <div class="top-square-btn" onclick="window.saveAndSync()">
+            SAVE<br>SYNC
+        </div>
+    </div>
+
+    <div class="sub-header">───── • ⚔️ • ─────</div>
+    <div class="decor-line">~ . ~ . ~ . ~ . ~</div>
+
+    <div class="search-container">
+        <input type="text" id="appSearch" placeholder="Search apps..." onkeyup="filterApps()">
+    </div>
+    
+    <div class="tile-container">
+        <div class="tile-wrapper"><div class="tile tile-inverse" onclick="window.inverseAll()">INVERSE</div></div>
+        <div class="tile-wrapper">
+            <div class="tile tile-select" onclick="window.toggleAll()">
+                <input type="checkbox" id="select-all-box" checked style="margin-right: 8px; width: 16px; height: 16px; accent-color: #000;">
+                SELECT ALL
+            </div>
+        </div>
+    </div>
+
+    <div class="stat-container">
+        <div class="stat-left">
+            <span class="stat-text">Uninstall 🗑️ : <span id="count-sel">000</span></span>
+            <span class="stat-text">Install 📥 : <span id="count-unsel">000</span></span>
+        </div>
+        <div class="stat-divider">|</div>
+        <div class="stat-right">
+            <span class="stat-label">Total Apps</span>
+            <span id="count-total" class="stat-number">000</span>
+        </div>
+    </div>
+
+    <div class="alphabet-rail" id="rail"></div>
+    <div id="app-list-container"></div>
+    
+    <button class="btn-save" onclick="window.saveAndSync()">SAVE & SYNC STATE</button>
+    <div id="log">Ready</div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
