@@ -1,0 +1,148 @@
+/* Version 1220: Full Styling Baseline */
+
+body { 
+    background: #000; 
+    color: #fff; 
+    font-family: 'Segoe UI', sans-serif; 
+    padding: 15px; 
+    margin-right: 35px; 
+    overflow-x: hidden; 
+    -webkit-tap-highlight-color: transparent; 
+}
+
+/* --- Header Section --- */
+.header-container {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    margin-top: 50px; /* Space Space */
+    margin-bottom: 10px; 
+    padding: 0 5px;
+}
+
+.main-header-left {
+    font-size: 1.8em; 
+    font-weight: 900; 
+    color: #fff; 
+    letter-spacing: 1px; 
+    text-transform: uppercase; 
+    line-height: 1.1; 
+    text-shadow: 0 0 20px rgba(0, 242, 255, 0.5);
+}
+
+.top-square-btn {
+    width: 65px; 
+    height: 65px; 
+    background: linear-gradient(135deg, #FF9800, #FFEB3B); /* Orange/Yellow */
+    color: #000; 
+    border-radius: 12px; 
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    font-size: 10px; 
+    font-weight: 900;
+    text-align: center; 
+    line-height: 1.2; 
+    box-shadow: 0 5px 15px rgba(255, 152, 0, 0.3);
+    cursor: pointer;
+}
+
+/* --- Dividers & Search --- */
+.sub-header { text-align: center; color: #333; font-size: 0.7em; margin-bottom: 2px; letter-spacing: 4px; }
+.decor-line { text-align: center; color: #222; font-size: 1.2em; margin-bottom: 25px; letter-spacing: 8px; font-weight: bold; }
+
+.search-container { margin-bottom: 20px; position: relative; }
+.search-container::before { content: "🔍"; position: absolute; left: 15px; top: 50%; transform: translateY(-50%); font-size: 1.1em; pointer-events: none; }
+#appSearch {
+    width: 100%; padding: 15px 15px 15px 45px; background: #111; border: 2px solid #222;
+    border-radius: 15px; color: #fff; font-family: inherit; font-size: 1em; outline: none; box-sizing: border-box;
+}
+
+/* --- Control Tiles & Stats --- */
+.tile-container { display: flex; gap: 12px; margin-bottom: 10px; }
+.tile-wrapper { flex: 1; }
+.tile { height: 60px; border-radius: 15px; display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 0.8em; cursor: pointer; transition: 0.2s; text-transform: uppercase; letter-spacing: 1px; }
+.tile-select { background: #0f0; color: #000; box-shadow: 0 5px 20px rgba(0, 255, 0, 0.3); }
+.tile-inverse { background: #7000ff; color: #fff; box-shadow: 0 5px 20px rgba(112, 0, 255, 0.3); }
+
+.stat-container { display: flex; align-items: center; justify-content: center; margin-bottom: 20px; padding: 0 10px; }
+.stat-left { flex: 1; display: flex; flex-direction: column; gap: 2px; }
+.stat-divider { padding: 0 15px; color: #333; font-size: 20px; font-weight: 100; }
+.stat-right { flex: 1; display: flex; flex-direction: column; align-items: center; }
+.stat-text { font-size: 10px; color: #666; font-weight: bold; text-transform: uppercase; }
+.stat-label { font-size: 10px; color: #666; font-weight: bold; text-transform: uppercase; margin-bottom: 2px; }
+.stat-number { font-size: 12px; color: #888; font-weight: 900; }
+
+/* --- App Cards --- */
+.app-card { 
+    background: #0d0d0d; 
+    padding: 14px; 
+    border-radius: 15px; 
+    margin-bottom: 10px; 
+    border: 1px solid #00f2ff; /* Neon green border */
+    display: flex; 
+    align-items: center; 
+    scroll-margin-top: 20px; 
+}
+.icon-box { 
+    width: 44px; 
+    height: 44px; 
+    margin-right: 15px; 
+    background: linear-gradient(135deg, #1a1a1a, #000); 
+    border-radius: 12px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    border: 1px solid #222; 
+    font-weight: bold; 
+    color: #00f2ff; 
+    font-size: 1.3em; 
+}
+.info { flex-grow: 1; }
+.name { font-weight: bold; display: block; color: #fff; font-size: 1em; }
+.pkg { color: #555; font-size: 0.65em; word-break: break-all; margin-top: 3px; }
+
+input[type="checkbox"].app-check { 
+    width: 24px; 
+    height: 24px; 
+    margin-left: 15px; 
+    accent-color: #0f0; 
+    cursor: pointer; 
+}
+
+/* --- Sidebar & Toast --- */
+.alphabet-rail { position: fixed; right: 8px; top: 12%; height: 75%; width: 22px; display: flex; flex-direction: column; justify-content: space-between; align-items: center; background: rgba(255, 255, 255, 0.03); border-radius: 30px; backdrop-filter: blur(10px); z-index: 100; padding: 12px 0; touch-action: none; border: 1px solid rgba(255,255,255,0.05); }
+.alphabet-rail span { color: #555; font-size: 9px; font-weight: 900; pointer-events: none; width: 100%; text-align: center; }
+#pop-indicator { position: fixed; right: 55px; width: 50px; height: 50px; background: #00f2ff; color: #000; border-radius: 50% 50% 0 50%; display: none; align-items: center; justify-content: center; font-size: 24px; font-weight: bold; transform: rotate(45deg); box-shadow: 0 0 20px rgba(0,242,255,0.4); z-index: 200; }
+#pop-indicator span { transform: rotate(-45deg); }
+
+.btn-save { background: linear-gradient(90deg, #00f2ff, #7000ff); color: #fff; border: none; padding: 20px; width: 100%; border-radius: 15px; font-weight: 900; margin-top: 15px; cursor: pointer; text-transform: uppercase; letter-spacing: 2px; }
+#log { font-size: 12px; font-weight: bold; margin-top: 15px; text-align: center; white-space: pre-line; margin-bottom: 30px; line-height: 1.6; }
+
+.toast { 
+    position: fixed; top: 50%; left: 50%; 
+    transform: translate(-50%, -50%); 
+    background: rgba(10, 10, 10, 0.98); 
+    color: #fff; 
+    padding: 18px 28px; 
+    width: fit-content; 
+    max-width: 90%; 
+    border-radius: 25px; 
+    z-index: 1000; 
+    backdrop-filter: blur(20px); 
+    border: 1px solid rgba(255, 255, 255, 0.15); 
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8); 
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+    pointer-events: none; 
+    text-align: center; 
+    white-space: pre-line; 
+}
+.toast.show { opacity: 1; }
+.toast-header { font-size: 18px; font-weight: 900; color: #0f0; display: block; margin-bottom: 1px; letter-spacing: 1px; white-space: nowrap; }
+.toast-body { font-size: 11px; font-weight: bold; color: #bbb; line-height: 1.6; margin: 0; }
+#log { font-size: 12px; font-weight: bold; margin-top: 15px; text-align: center; white-space: pre-line; margin-bottom: 30px; line-height: 1.6; }
+.log-success { color: #0f0; text-transform: uppercase; font-size: 14px; }
+.log-red { color: #f00; }
+.log-green { color: #0f0; }
