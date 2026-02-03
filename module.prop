@@ -1,9 +1,10 @@
-id=Vishal_miui_debloat
-name=Miui/HyperOS Debloater
-version=4.04
-versionCode=1225
+id=Vishal_oneui_debloat
+name=Samsung Debloater
+version=5.05
+versionCode=5050
 author=Vishal Rathaur
-description=Miui/HyperOS Debloater module for Google and Xiaomi apps. Uses -k flag so it can preserve app data. Not sure if your app data is preserved.
-banner=vishal.png
+description=Samsung Debloater module for Google, Knox and Samsung apps. Uses -k flag so it can preserve app data. Not sure if your app data is preserved.
+banner=vishal_oneui.png
 webui=true
-axeronPlugin=10001
+axeronPlugin=10002
+repourl=https://github.com/div-vishal-07/Samsung-Debloater
