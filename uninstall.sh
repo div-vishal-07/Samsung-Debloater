@@ -1,14 +1,14 @@
 #!/system/bin/sh
-# Miui Debloat by Vishal - Uninstall Script (v1225)
+# OneUI Debloat by Vishal - Uninstall Script (v5050)
 
-if [ -d "/data/adb/modules/Vishal_miui_debloat" ]; then
-    MODDIR="/data/adb/modules/Vishal_miui_debloat"
+if [ -d "/data/adb/modules/Vishal_oneui_debloat" ]; then
+    MODDIR="/data/adb/modules/Vishal_oneui_debloat"
 else
     MODDIR=${0%/*}
 fi
 
 echo "-----------------------------------"
-echo "  Uninstalling Miui/HyperOS Debloater Module/Plugin...     "
+echo "  Uninstalling Samsung OneUI Debloater Module/Plugin...     "
 echo "-----------------------------------"
 
 [ -f "$MODDIR/webroot/to_remove.list" ] && rm -f "$MODDIR/webroot/to_remove.list"
