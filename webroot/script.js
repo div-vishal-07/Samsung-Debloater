@@ -108,7 +108,7 @@ window.saveAndSync = async function() {
         else restore.push(app.pkg);
     });
 
-    const modId = "Vishal_miui_debloat";
+    const modId = "Vishal_oneui_debloat";
     
     // Non-root path (xyz)
     const pathXYZ = "/data/user_de/0/com.android.shell/axeron/plugins/" + modId + "/webroot";
