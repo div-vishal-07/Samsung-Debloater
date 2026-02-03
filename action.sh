@@ -1,13 +1,13 @@
 #!/system/bin/sh
-# Miui Debloat by Vishal - Action Script (v1225)
+# OneUI Debloater by Vishal - Action Script (v5050)
 
 # Combined Path Logic from A and C
-if [ -d "/data/adb/modules/Vishal_miui_debloat" ]; then
-    MODDIR="/data/adb/modules/Vishal_miui_debloat"
-elif [ -d "/mnt/phh/vold/data/adb/modules/Vishal_miui_debloat" ]; then
-    MODDIR="/mnt/phh/vold/data/adb/modules/Vishal_miui_debloat"
-elif [ -d "/data/user_de/0/com.android.shell/axeron/plugins/Vishal_miui_debloat" ]; then
-    MODDIR="/data/user_de/0/com.android.shell/axeron/plugins/Vishal_miui_debloat"
+if [ -d "/data/adb/modules/Vishal_oneui_debloat" ]; then
+    MODDIR="/data/adb/modules/Vishal_oneui_debloat"
+elif [ -d "/mnt/phh/vold/data/adb/modules/Vishal_oneui_debloat" ]; then
+    MODDIR="/mnt/phh/vold/data/adb/modules/Vishal_oneui_debloat"
+elif [ -d "/data/user_de/0/com.android.shell/axeron/plugins/Vishal_oneui_debloat" ]; then
+    MODDIR="/data/user_de/0/com.android.shell/axeron/plugins/Vishal_oneui_debloat"
 else
     MODDIR=${0%/*}
 fi
@@ -16,7 +16,7 @@ REMOVE_FILE="$MODDIR/webroot/to_remove.list"
 RESTORE_FILE="$MODDIR/webroot/to_restore.list"
 
 echo "==============================="
-echo "   Miui/HyperOS Debloater| Vishu ❤️ (1225)  "
+echo "   Samsung OneUI Debloater| Vishu ❤️ (5050)  "
 echo "==============================="
 
 # Check Lists (from C)
