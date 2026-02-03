@@ -1,5 +1,5 @@
 #!/system/bin/sh
-# Miui Debloat by Vishal - Installer (v1225)
+# OneUI Debloater by Vishal - Installer (v5050)
 logcat -G 128K &>/dev/null
 
 # Environment Detection
@@ -20,7 +20,7 @@ print_msg() {
 # BRANDING HEADER
 # Fixed ASCII art with double backslashes (\\)
 print_msg "*****************************************"
-print_msg "  Miui/HyperOS Debloater Module/Plugin | V4.04            "
+print_msg "  Samsung OneUI Debloater Module/Plugin | V5.05            "
 print_msg "  by Vishal Rathaur                      "
 print_msg "*****************************************"
 print_msg ""
@@ -37,7 +37,7 @@ ANDROIDVERSION=$(getprop ro.build.version.release)
 DEVICES=$(getprop ro.product.board)
 MANUFACTURER=$(getprop ro.product.manufacturer)
 NAME="Debloater | Vishu ❤️"
-VERSION="1225 Stable"
+VERSION="5050 Stable"
 DATE=$(date)
 
 print_msg "Hello Sir/Ma'am 👋"
@@ -45,7 +45,7 @@ print_msg ""
 sleep 0.4
 print_msg " Let's Clean up the Trash that isn't necessary "
 sleep 0.2
-print_msg "Initializing cleanup for ${MANUFACTURER}..."
+print_msg " Initializing cleanup for ${MANUFACTURER}..."
 print_msg ""
 print_msg "***************************************"
 print_msg ""
@@ -59,7 +59,7 @@ print_msg "- Device         : ${DEVICES:-Unknown}"
 print_msg "- Manufacturer    : ${MANUFACTURER:-Unknown}"
 print_msg "***************************************"
 print_msg ""
-print_msg "   - Miui/HyperOS Debloater Module/Plugin -    "
+print_msg "   - Samsung OneUI Debloater Module/Plugin -    "
 print_msg ""
 print_msg "*****************************************"
 
@@ -74,5 +74,5 @@ mkdir -p "$MODPATH/system"
 print_msg "- Setting up permissions..."
 set_permalink_recursive "$MODPATH/webroot" 0 0 0755 0644
 
-print_msg "- Miui/HyperOS Debloater Module  is ready."
+print_msg "- Samsung OneUI Debloater Module  is ready."
 print_msg "*****************************************"
